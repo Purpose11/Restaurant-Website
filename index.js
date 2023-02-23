@@ -4,6 +4,7 @@ const mainTextDiv = document.getElementById('mainText')
 const barIcon = document.getElementById('bar')
 const navivagationMenu = document.querySelector('.nav-menu ul')
 const closeNavigation = document.getElementById('close-navigation')
+const foodImg = document.getElementById('food')
 
 
 const backgroundArray = [
@@ -63,3 +64,8 @@ closeNavigation.addEventListener('click', () =>{
     navivagationMenu.style.right = '-100%'
 })
 
+
+setInterval( () => {
+    let rotate = 'rotate(10deg)'
+    foodImg.style.transform  +=  rotate
+}, 200)
